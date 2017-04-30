@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tab组件</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="tab_component.css">
+    <script src="jquery.js"></script>
+    <script src="tab_component.js"></script>
+
+</head>
+<body>
+<div class="js-tab tab" data-config='{
+        "triggerType":"click",
+         "effect":"fade",
+        "invoke":2,
+         "auto":2000
+}'>
+    <ul class="tab-nav">
+        <li class="active"><a href="javascript:;">新闻</a></li>
+        <li><a href="javascript:;">娱乐</a></li>
+        <li><a href="javascript:;">电影</a></li>
+        <li><a href="javascript:;">科技</a></li>
+    </ul>
+    <div class="content-wrap">
+        <div class="content-item current"><img src="a.jpg" alt=""></div>
+        <div class="content-item"><img src="b.jpg" alt=""></div>
+        <div class="content-item"><img src="c.jpg" alt=""></div>
+        <div class="content-item"><img src="d.jpg" alt=""></div>
+    </div>
+</div>
+
+</body>
+<script>
+    $(function () {
+        $(".js-tab").tab();
+    })
+</script>
+</html>
